@@ -208,6 +208,25 @@ blockquote.testimony p { font-size: 1.15rem; }
 .video-play::after { content: ""; position: absolute; left: 55%; top: 50%; transform: translate(-50%, -50%); border-style: solid; border-width: .8rem 0 .8rem 1.3rem; border-color: transparent transparent transparent var(--sun-ink); }
 .video-label { position: absolute; left: 0; right: 0; bottom: 0; padding: .7rem 1rem; color: #fff; background: linear-gradient(transparent, rgb(0 0 0 / .7)); font-weight: 600; font-size: .95rem; }
 
+/* Blog */
+.post-list { display: grid; gap: 1.25rem; max-width: 52rem; }
+.post-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.75rem; display: grid; gap: .7rem; }
+.post-card h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.post-card h2 a { color: var(--ink); text-decoration: none; }
+.post-card h2 a:hover { color: var(--green); }
+.post-card a.more { font-weight: 600; text-decoration: none; }
+.post-card a.more::after { content: " →"; }
+.post-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; color: var(--muted); font-size: .92rem; }
+.post-by { font-size: .92rem; color: var(--muted); font-style: italic; }
+.post-hero { max-width: 52rem; }
+.back { font-weight: 600; text-decoration: none; font-size: .95rem; }
+.byline { color: var(--muted); font-size: .95rem; border-top: 1px solid var(--line); padding-top: .9rem; }
+.article { font-size: 1.1rem; }
+.article h2 { margin-top: 1.5rem; }
+.dropcap::first-letter { font-family: var(--display); float: left; font-size: 3.6em; line-height: .85; padding: .08em .1em 0 0; color: var(--green); }
+.article-pull { margin: .75rem 0; padding: 1.25rem 1.5rem; background: var(--band); border-radius: var(--radius); }
+.article-pull p { font-family: var(--display); font-size: clamp(1.3rem, 2.8vw, 1.7rem); line-height: 1.35; }
+
 /* YouTube embed (download version) */
 .video-embed { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: var(--radius); overflow: hidden; background: var(--ink); }
 .video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
